@@ -24,5 +24,9 @@ public class Carrinho {
         this.descricao = "PENDENTE";
         this.criadoEm = criadoEm; 
     }
+
+    public ArrayList<Produto> getProdutos(){
+        return this.produtos;
+    }
 }
 

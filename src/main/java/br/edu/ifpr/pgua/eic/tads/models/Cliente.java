@@ -2,6 +2,8 @@ package br.edu.ifpr.pgua.eic.tads.models;
 
 import java.util.ArrayList;
 import br.edu.ifpr.pgua.eic.tads.models.Produto;
+import br.edu.ifpr.pgua.eic.tads.models.Carrinho;
+
 
 public class Cliente extends Usuario{
 

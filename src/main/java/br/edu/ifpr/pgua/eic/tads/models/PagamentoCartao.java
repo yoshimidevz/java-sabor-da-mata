@@ -6,7 +6,7 @@ public class PagamentoCartao extends Pagamento {
     private Double valor;
 
     @Override
-    public abstract void processarPagamento(){
+    public void processarPagamento(){
         System.out.println("pagamento com cartão crédito");
     }
 }

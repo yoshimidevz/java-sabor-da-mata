@@ -1,7 +1,7 @@
 package br.edu.ifpr.pgua.eic.tads;
 
 import br.edu.ifpr.pgua.eic.tads.controllers.IndexController;
-import br.edu.ifpr.pgua.eic.tads.models,Produto;
+
 import io.javalin.Javalin;
 
 /**

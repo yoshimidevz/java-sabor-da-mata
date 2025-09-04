@@ -1,7 +1,7 @@
 package br.edu.ifpr.pgua.eic.tads;
 
 import br.edu.ifpr.pgua.eic.tads.controllers.IndexController;
-import br.edu.ifpr.pgua.eic.tads.utils.JavalinUtils;
+import br.edu.ifpr.pgua.eic.tads.models,Produto;
 import io.javalin.Javalin;
 
 /**
@@ -9,12 +9,13 @@ import io.javalin.Javalin;
  *
  */
 public class App {
-    public static void main( String[] args ){
-        var app = JavalinUtils.makeApp(7070);
-        
-        IndexController indexController = new IndexController();
-        
-        app.get("/", indexController.get);
-        
+    // public static ArrayList<Produto> bdProdutos = new ArrayList<>();
+
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+
+        Javalin app = Javalin.create().start(7070);
+
+        app.get("/tads24", ctx -> ctx.result("TADS24 EH TOP"));
     }
 }

@@ -1,0 +1,12 @@
+package br.edu.ifpr.pgua.eic.tads.models;
+
+import br.edu.ifpr.pgua.eic.tads.models.abstracts.Pagamento;
+
+public class PagamentoBoleto extends Pagamento {
+    private Double valor;
+
+    @Override
+    public abstract void processarPagamento(){
+        System.out.println("pagamento com boleto");
+    }
+}

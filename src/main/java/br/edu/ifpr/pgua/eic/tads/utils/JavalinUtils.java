@@ -16,9 +16,6 @@ public class JavalinUtils {
     
     public static Javalin makeApp(int port){
         
-        
-        
-        
         Javalin app = Javalin.create(config->{
             Configuration conf = new Configuration(Configuration.VERSION_2_3_33);
             conf.setClassForTemplateLoading(JavalinUtils.class, "/public");

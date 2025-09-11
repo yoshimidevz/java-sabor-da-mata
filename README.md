@@ -1,21 +1,16 @@
 # Desenvolvimento de um Sistema de Gestão Escolar Completo
 
 ## Descrição:
-Crie uma aplicação web para gerenciar todas as operações de uma instituição de ensino. Utilize os conhecimentos adquiridos em aula para desenvolver um sistema completo e eficiente, abrangendo as seguintes funcionalidades:
+Um e-commerce de produtos ecológicos, que gera pontos por entrega de materiais para a produção deles como tampinhas de garrafa (Polímera)
 
 ## Cadastros e Gestão:
-- **Escola**: Cadastrar incluindo informações detalhadas como nome, endereço, contato.
-- **Alunos**: Cadastrar, listar e excluir alunos, com informações como matrícula, nome completo, CPF, data de nascimento, endereço, telefone, e-mail.
-- **Professores**: Cadastrar, listar e excluir professores, incluindo informações como SIAPE, nome completo, CPF, data de nascimento, endereço, telefone, e-mail.
-- **Disciplinas**: Cadastrar, listar e excluir disciplinas, com informações como código, nome, ementa, carga horária e professor responsável.
-
-Um aluno pode estar matriculado em várias disciplinas e cada disciplina pode ter no máximo 40 alunos.
+- **Admin**:  Gerenciamento e monitoramento de produtos, pode editar e excluir itens fora do padrão do site, pode excluir contas de clientes e produtores que desrespeitaram alguma norma/regra e pode gerenciar lucros e gerar cupons.
+- **Clientes**: Podem se cadastrar, logar, editar informações, definir preferencias, ver lista de produtos, adicionar itens no carrinho, adicionar cartão, consumir cupons e finalizar compra.
+- **Produtores**: Podem se cadastrar, logar, editar informações, definir categoria de produtos, criar loja, adicionar produtos na sua loja, adicionar preço aos produtos, gerar cupons, receber materiais primários e ceder pontos.
+- **Entregadores**: Podem se cadastrar, logar, editar informações, definir área/cidade de trabalho, ficar disponivel e indisponivel durante o dia, ser entregador fiel de alguma loja, podem levar saco econômico p cliente devolver material primário na próxima entrega, podem colocar quantidade do material primario devolvido no site.
 
 **Bônus:**
-- Editar escola
-- Editar aluno
-- Editar disciplina
-- Editar professor
+- 
 
 ## Requisitos
 1. Deve ser implementado utilizando Java
@@ -26,7 +21,6 @@ Um aluno pode estar matriculado em várias disciplinas e cada disciplina pode te
 
 ## Observações 
 
-Na primeira etapa, vamos trabalhar apenas no CRD (Create, read, delete) da nossa aplicação. Quando retornarmos, falaremos e  implementaremos os relacionamentos entre as tabelas de alunos e disciplinas.
 
 # Entrega:
 **14/02/2025 até às 9:10**

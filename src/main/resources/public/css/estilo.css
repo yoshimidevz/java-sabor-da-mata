@@ -1,10 +1,163 @@
-body {
-    background-color: powderblue;
-    margin: auto;
-    text-align: center;
-    align-items: center;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h1 {
-    color: blue;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+
+header {
+  background-color: #1b9810;
+  padding: 20px 10px;
+}
+
+.header-top-info {
+  color: white;
+  font-family: "Montserrat", serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.logo-and-menu {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.site-logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+.navigation-menu {
+  position: relative;
+}
+
+.menu-items {
+  display: none;
+}
+
+.menu-items ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-items li a {
+  text-decoration: none;
+  color: #349517;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu-items.active {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 10;
+}
+
+.menu-items.active li a {
+  color: #e59347;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.main-content {
+  background-color: #fbf2d4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-content h2.tagline {
+  font-family: "Montserrat", serif;
+  color: #e59347;
+  margin-bottom: 10px;
+}
+
+.main-content h1.headline {
+  font-family: "Mulish", sans-serif;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.main-image {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.main-photo {
+  width: 100%;
+  height: auto;
+}
+
+.access-system-btn {
+  background-color: #e59347;
+  color: #2a437f;
+  font-family: "Montserrat", serif;
+  font-weight: bolder;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.access-system-btn:hover {
+  background-color: #d7813a;
+  color: white;
+}
+
+
+footer {
+  background-color: #4d8659;
+  display: flex;
+  color: #ffffff;   
+  text-align: center;
+  justify-content: center;
+}
+
+footer p {
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
 }

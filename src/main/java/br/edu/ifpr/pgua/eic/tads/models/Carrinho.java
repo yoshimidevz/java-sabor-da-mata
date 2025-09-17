@@ -10,8 +10,8 @@ public class Carrinho {
     private LocalDateTime criadoEm;
     private LocalDateTime finalizadoEm;
 
-    public Carrinho(ArrayList<Produto> produtos, Double total, String descricao, LocalDateTime criadoEm, LocalDateTime finalizadoEm){
-        this.produtos = produtos;
+    public Carrinho(Double total, String descricao, LocalDateTime criadoEm, LocalDateTime finalizadoEm){
+        this.produtos = new ArrayList<>();
         this.total = total;
         this.descricao = descricao;
         this.criadoEm = criadoEm;

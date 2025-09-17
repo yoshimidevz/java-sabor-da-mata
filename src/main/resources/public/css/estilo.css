@@ -5,19 +5,12 @@
 }
 
 :root {
-    --primary: #2d5016;
-    --primary-foreground: #ffffff;
-    --secondary: #8b5a3c;
-    --secondary-foreground: #ffffff;
-    --accent: #d97706;
-    --accent-foreground: #ffffff;
-    --background: #ffffff;
-    --foreground: #2d3748;
-    --muted: #f7fafc;
-    --muted-foreground: #718096;
-    --border: #e2e8f0;
-    --card: #ffffff;
-    --card-foreground: #2d3748;
+    --primary: #f0e8d5;
+    --purewhite: #ffffff;
+    --brown: #CD835E;
+    --orange: #d97706;
+    --grey: #2d3748;
+    --softgreen: #71A873;
 }
 
 html {
@@ -34,13 +27,10 @@ body {
 
 /* Header */
 header {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--brown);
   position: sticky;
   top: 0;
   z-index: 50;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
@@ -53,9 +43,8 @@ header {
 }
 
 .logo {
-  font-size: 1.5rem;
+  size: 1px;
   font-weight: bold;
-  color: var(--primary-foreground);
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Playfair Display', serif;
@@ -68,14 +57,10 @@ header {
 }
 
 .nav-desktop a {
-  color: var(--primary-foreground);
+  color: var(--purewhite);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
-}
-
-.nav-desktop a:hover {
-  color: var(--accent);
 }
 
 .header-actions {
@@ -87,7 +72,7 @@ header {
 .cart-btn {
   background: none;
   border: none;
-  color: var(--primary-foreground);
+  color: var(--purewhite);
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 0.375rem;
@@ -98,6 +83,7 @@ header {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Hero Section */
 .hero-section {
     position: relative;
     min-height: 85vh;
@@ -107,7 +93,7 @@ header {
 .hero-background-gradient {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom right, var(--secondary) 0%, var(--accent) 100%);
+    background: var(--primary);
 }
 
 .hero-container {
@@ -141,7 +127,6 @@ header {
     font-size: 2.5rem;
     line-height: 1.2;
     font-weight: bold;
-    color: white;
     font-family: 'Playfair Display', serif;
 }
 
@@ -158,12 +143,12 @@ header {
 }
 
 .hero-title-primary {
-    color: var(--primary);
+    color: var(--grey);
     display: block;
 }
 
 .hero-title-foreground {
-    color: var(--foreground);
+    color: var(--softgreen);
     display: block;
 }
 
@@ -207,8 +192,8 @@ header {
 }
 
 .btn-primary {
-    background-color: var(--secondary);
-    color: var(--secondary-foreground);
+    background-color: var(--brown);
+    color: var(--purewhite);
 }
 
 .btn-primary:hover {
@@ -219,7 +204,7 @@ header {
 
 .btn-ghost {
     background: transparent;
-    color: var(--foreground);
+    color: var(--grey);
     border: 1px solid rgba(45, 55, 72, 0.2); /* border-foreground/20 */
 }
 

@@ -6,62 +6,99 @@
     <link rel="stylesheet" href="../css/estilo.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <title>Página inicial</title>
+    <title>Sabor da Mata -  Produtos Artesanais da Mata Atlântica</title>
+
   </head>
 
   <body>
-    
-    <header>
-      <div class="header-top-info">
-        <span class="help-text">E-commerce</span>
-      </div>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="./inicio.html">
+                  <img src="../images/sabor-da-mata-logo.png" alt="Logo" />
+                </a>
+                
+                <!-- <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="/" class="nav-link">Início</a></li>
+                        <li><a href="/loja" class="nav-link">Loja</a></li>
+                        <li><a href="/sobre" class="nav-link">Sobre Nós</a></li>
+                        <li><a href="/contato" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav> -->
+            </div>
+        </div>
     </header>
 
-    <main class="main-content">
-      <div class="logo-and-menu">
-   
-        <div class="site-logo">
-          <a href="./inicio.html">
-          <img src="../imgs/logo.png" alt="Logo" />
-        </a>
+    <section class="hero-section">
+        <!-- Background Gradient -->
+        <div class="hero-background-gradient"></div>
+        
+        <!-- Content Container -->
+        <div class="hero-container">
+            <div class="hero-grid">
+                
+                <!-- Left Content -->
+                <div class="hero-content-left">
+                    <h1 class="hero-title">
+                        <span class="hero-title-primary">Frutas Nativas da</span>
+                        <span class="hero-title-foreground">Mata Atlântica</span>
+                        <span class="hero-title-foreground">na sua porta!</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Nós acreditamos em passar o conhecimento e a cultura da mata atlântica através das frutas.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="/loja" class="btn btn-primary">
+                            <span>📦</span>
+                            Ir para Loja
+                        </a>
+                        
+                        <a href="/sobre" class="btn btn-ghost">
+                            Saiba Mais
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right Content - Image Grid -->
+                <div class="hero-image-grid">
+                    <div class="hero-image-column">
+                        <div class="hero-image-card">
+                            <img 
+                                src="/images/araca.jpg" 
+                                alt="Araça" 
+                                class="hero-image-item"
+                            />
+                        </div>
+                        <div class="hero-image-card">
+                            <img 
+                                src="/images/jucara.png" 
+                                alt="Juçara" 
+                                class="hero-image-item"
+                            />
+                        </div>
+                    </div>
+                    <div class="hero-image-column pt-8">
+                        <div class="hero-image-card">
+                            <img 
+                                src="/images/cubiu.jpg" 
+                                alt="Cubiu" 
+                                class="hero-image-item"
+                            />
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
-
-        <div class="navigation-menu">
-          <img src="../imgs/menu.png" alt="Menu" class="hamburger-menu" />
-
-          <nav class="menu-items">
-            <ul>
-              <li><a href="./inicio.html">Início</a></li>
-              <li><a href="#about-us">Sobre Nós</a></li>
-              <li><a href="./login.html">Entrar</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-
-      <h1 class="headline">
-        Transformando a educação com organização, eficiência e inovação!
-      </h1>
-      <a href="./login.html">
-      <button class="access-system-btn">Acesse o Sistema</button>
-    </a>
-      <div class="main-image">
-        <img
-          class="main-photo"
-          src="../imgs/principalFoto.png"
-          alt="Ilustração educativa"
-        />
-      </div>
-    </main>
+    </section>
+    
 
     <footer>
       <p>© 2025 ECO-mmerce</p>

@@ -40,14 +40,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.logo {
-  size: 1px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Playfair Display', serif;
+}
+
+#logoimg {
+    width: 100px;
+    border-radius: 50%;
 }
 
 .nav-desktop {
